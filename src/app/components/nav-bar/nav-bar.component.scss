@@ -1,0 +1,33 @@
+.container {
+    padding: 12px 0px 0px 12px;
+    display: flex;
+    background: #004a79;
+    color: white;
+    border-bottom: 3px solid rgba(0,0,0, 0.1);
+}
+
+h1 {
+    font-size: 36px;
+    margin-top: 5px;
+    display: inline;
+}
+
+search-bar {
+    flex-grow: 2;
+}
+
+a {
+    padding: 8px;
+    height: 12px;
+    cursor: pointer;
+    text-decoration: none;
+    color:inherit
+}
+
+a:hover {
+    color: black;
+}
+
+.container:last-child {
+    padding-right: 12px;
+}

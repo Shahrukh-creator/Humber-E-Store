@@ -1,0 +1,21 @@
+.example-card {
+    width: 360px;
+    height: 400px;
+    padding: 10px 20px 20px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 9px 0px;
+    flex-grow: 1;
+  }
+
+img {
+    display: block;
+    max-width:350px;
+    max-height:250px;
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+
+button:hover {
+    background-color: rgb(205, 205, 205)
+}

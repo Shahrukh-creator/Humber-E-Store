@@ -1,0 +1,22 @@
+[
+    { "name": "iPhone 13", "price": "$1300", "image": "https://www.apple.com/v/iphone-13/f/images/overview/hero/hero_1_static__feiuc1zaeiaa_large_2x.jpg" },
+    { "name": "Samsung S22", "price": "$1300", "image": "https://images.samsung.com/is/image/samsung/p6pim/ca/2202/gallery/ca-galaxy-s22-s901-sm-s901widexac-530778700?$684_547_JPG$" },
+    { "name": "Dell XPS 13", "price": "$1500", "image": "https://media.wired.com/photos/60f72daaff69a47a8f704ae7/master/w_1600,c_limit/Gear-Dell-XPS-13-2021-1.jpg" },
+    { "name": "Nikon D500", "price": "$2100", "image": "https://m.media-amazon.com/images/I/81UU1rHsqaL._AC_SL1500_.jpg" },
+    { "name": "Apple Airpods (2nd Gen)", "price": "$150", "image": "https://m.media-amazon.com/images/I/7120GgUKj3L._AC_SL1500_.jpg" },
+    { "name": "Dining Table Set", "price": "$600", "image": "https://secure.img1-fg.wfcdn.com/im/75518679/resize-h445%5Ecompr-r85/1445/144537867/Samantha+4+-+Person+Dining+Set.jpg" },
+    { "name": "BBQ", "price": "$500", "image": "https://secure.img1-fg.wfcdn.com/im/76096109/resize-h800-w800%5Ecompr-r85/3700/37000790/Dyna-Glo+4+-+Burner+Free+Standing+Liquid+Propane+60000+BTU+Gas+Grill+with+Side+Burner.jpg" },
+    { "name": "Abstract Area Rug", "price": "$250", "image": "https://secure.img1-fg.wfcdn.com/im/17559097/resize-h800-w800%5Ecompr-r85/1320/132017873/Dittmer+Abstract+Area+Rug+in+Blue%2FIvory.jpg" },
+    { "name": "Blender", "price": "$50", "image": "https://secure.img1-fg.wfcdn.com/im/04651187/resize-h800-w800%5Ecompr-r85/1575/157542802/Brentwood+12+Speed+Blender%2C+White.jpg" },
+    { "name": "Refrigerator", "price": "$1500", "image": "https://secure.img1-fg.wfcdn.com/im/96996342/resize-h800-w800%5Ecompr-r85/4299/42992591/28%22+Counter+Depth+Bottom+Freezer+Energy+Star+15+cu.+ft.+Refrigerator.jpg" },
+    { "name": "Washing Machine", "price": "$1400", "image": "https://secure.img1-fg.wfcdn.com/im/29809053/resize-h800-w800%5Ecompr-r85/1408/140844241/Samsung+4.5+Cubic+Feet+Cu.+Ft.+High+Efficiency+Smart+Front+Load+Washer+with+Steam+Wash+in+Platinum.jpg" },
+    { "name": "Robot Vacuum", "price": "$400", "image": "https://secure.img1-fg.wfcdn.com/im/18196005/resize-h800-w800%5Ecompr-r85/1674/167458166/Ihomy+Robot+Vacuum+And+Mop+Combo+2+In+1+Robot+Vacuum+Cleaner+With+2000pa+Suction+Wifi-connected+And+Self-charging+For+Pet+Hair+Carpet+Hard+Floors.jpg" },
+    { "name": "Air Purifier", "price": "$75", "image": "https://secure.img1-fg.wfcdn.com/im/29645743/resize-h800-w800%5Ecompr-r85/1899/189934938/Hepa+Air+Purifiers+For+Home+-+Tpap002+With+Fragrance+Sponge+Uv+Light%2C+Eliminate+Pollen+Pet+Hair+Dander+Smoke+Dust+Odours+Airborne+Contaminants+For+Bedroom%2C+Available+For+California%2C+White.jpg" },
+    { "name": "Shower Curtain", "price": "$37", "image": "https://secure.img1-fg.wfcdn.com/im/71636010/resize-h800-w800%5Ecompr-r85/1408/140896229/Shower+Curtain+Woven+Printed+Fabric+Lemons.jpg" },
+    { "name": "Storage Baskets", "price": "$70", "image": "https://secure.img1-fg.wfcdn.com/im/83814707/resize-h800-w800%5Ecompr-r85/1750/175022319/Hyacinth+Wicker+Basket+Set.jpg" },
+    { "name": "Organization Kit", "price": "$250", "image": "https://secure.img1-fg.wfcdn.com/im/31804363/resize-h800-w800%5Ecompr-r85/1076/107610207/Grey+Closet+Storage+Kit.jpg" },
+    { "name": "Tool Shed", "price": "$450", "image": "https://secure.img1-fg.wfcdn.com/im/17426427/resize-h800-w800%5Ecompr-r85/5475/54755491/4+ft.+W+x+3+ft.+D+Plastic+Vertical+Tool+Shed.jpg" },
+    { "name": "Gazebo", "price": "$300", "image": "https://secure.img1-fg.wfcdn.com/im/98240644/resize-h800-w800%5Ecompr-r85/1912/191257633/11+Ft.+W+x+11+Ft.+D+Steel+Patio+Gazebo.jpg" },
+    { "name": "Mirror", "price": "$100", "image": "https://secure.img1-fg.wfcdn.com/im/64269720/resize-h800-w800%5Ecompr-r85/1381/138185700/Decosmo+Modern+%26+Contemporary+Cheval+Mirror.jpg" },
+    { "name": "Rabbit Statue", "price": "$80", "image": "https://secure.img1-fg.wfcdn.com/im/49644918/resize-h800-w800%5Ecompr-r85/1176/117632616/Hopper%2C+the+Bunny%2C+Standing+Garden+Rabbit+Statue.jpg" }
+]

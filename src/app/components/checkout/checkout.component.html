@@ -1,0 +1,251 @@
+<div class="container">
+
+  <form [formGroup]="form" (ngSubmit)="submit()">
+
+    <!-- first Name -->
+    <div class="row">
+      <div class="col-25">
+        <label for="name">First Name</label>
+      </div>
+
+      <div class="col-75">
+
+        <input placeholder="First Name" formControlName="first_name" id="first_name" type="text" class="form-control">
+
+        <div class="Error_handling" *ngIf="f.first_name.dirty && f.first_name.invalid">
+          <div *ngIf="f.first_name.errors?.minlength">
+            First Name must be minimum 3 characters.
+          </div>
+          <div *ngIf="f.first_name.errors && f.first_name.errors.required">
+            First Name is required.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- last name -->
+    <div class="row">
+      <div class="col-25">
+        <label for="name">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input placeholder="Last Name" formControlName="last_name" id="last_name" type="text" class="form-control">
+        <div class="Error_handling" *ngIf="f.last_name.dirty && f.last_name.invalid">
+          <div *ngIf="f.last_name.errors?.minlength">
+            Last Name must be minimum 3 characters.
+          </div>
+          <div *ngIf="f.last_name.errors && f.last_name.errors.required">
+            Last Name is required.
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Address -->
+    <div class="row">
+      <div class="col-25">
+        <label for="name">Adress</label>
+      </div>
+      <div class="col-75">
+        <input placeholder="Address" value="{{saves_address}}" formControlName="address" id="address" type="text"
+          class="form-control">
+        <a (click)="add_address()" class="button">Add Address</a>
+
+        <div class="Error_handling" *ngIf="f.address.dirty && f.address.invalid">
+          <div *ngIf="f.address.errors?.minlength">
+            Address must be minimum 3 characters.
+          </div>
+          <div *ngIf="f.address.errors && f.address.errors.required">
+            Address is required.
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- city -->
+    <div class="row">
+      <div class="col-25">
+        <label for="name">City</label>
+      </div>
+      <div class="col-75">
+        <input placeholder="City" formControlName="city" id="city" type="text" class="form-control">
+        <div class="Error_handling" *ngIf="f.city.dirty && f.city.invalid">
+          <div *ngIf="f.city.errors && f.city.errors.required">
+            City is required.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Postal Code -->
+    <div class="row">
+      <div class="col-25">
+        <label for="name">Postal Code</label>
+      </div>
+      <div class="col-75">
+        <input placeholder="Postal Code" formControlName="postal_code" id="postal_code" type="text"
+          class="form-control">
+        <div class="Error_handling" *ngIf="f.postal_code.dirty && f.postal_code.invalid">
+          <div *ngIf="f.postal_code.errors && f.postal_code.errors.required">
+            Postal Code is required.
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- country name -->
+    <div class="row">
+      <div class="col-25">
+        <label>Select Country</label>
+      </div>
+      <div class="col-75">
+        <select formControlName="country">
+          <option>Canada</option>
+          <option>United States</option>
+        </select>
+        <div class="Error_handling" *ngIf="f.country.touched && f.country.errors">
+          <div *ngIf="f.country.errors.required">Country is required</div>
+
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+    <!-- card type -->
+    <div class="row">
+      <div class="col-25">
+        <label>Select Card</label>
+      </div>
+      <div class="col-75">
+        <select formControlName="card_type">
+          <option>VISA</option>
+          <option>MasterCard</option>
+        </select>
+        <div class="Error_handling" *ngIf="f.card_type.touched && f.card_type.errors">
+          <div *ngIf="f.card_type.errors.required">Card is required</div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- card Number -->
+    <div class="row">
+      <div class="col-25">
+        <label for="name">Card Number</label>
+      </div>
+      <div class="col-75">
+        <input placeholder="Card Number" formControlName="card_number" id="card_number" type="text"
+          class="form-control">
+
+
+        <div class="Error_handling" *ngIf="!f.card_number.valid && (f.card_number.dirty || f.card_number.touched)">
+
+          <div *ngIf="f.card_number.errors.pattern">
+            Number Only.
+          </div>
+
+          <div *ngIf="f.card_number.errors && f.card_number.errors.required">
+            Card number is required.
+          </div>
+
+          <div *ngIf="f.card_number.errors?.max">
+            Only 16 characters required.
+          </div>
+
+          <div *ngIf="f.card_number.errors">
+            Invalid Card Number.
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- expiry data -->
+    <div class="row">
+      <div class="col-25">
+        <label>Expiry Date</label>
+      </div>
+      <div class="col-75">
+        <input placeholder="Card Expiry" type="month" formControlName="card_expiry" id="card_expiry" name="card_expiry">
+        <div class="Error_handling" *ngIf="f.card_expiry.touched && f.card_expiry.errors">
+          <div *ngIf="f.card_expiry.errors.required">Expiry Date is required</div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- card CVC -->
+    <div class="row">
+      <div class="col-25">
+        <label for="name">Card CVC</label>
+      </div>
+      <div class="col-75">
+        <input placeholder="CVC" formControlName="card_cvc" id="card_cvc" type="text" class="form-control">
+
+        <div class="Error_handling" *ngIf="f.card_cvc.dirty && f.card_cvc.invalid">
+
+          <div *ngIf="f.card_cvc.errors?.maxlength">
+            CVC Number can only be maximum 4 characters.
+          </div>
+          <div *ngIf="f.card_cvc.errors && f.card_cvc.errors.required">
+            CVC Number is required.
+          </div>
+
+          <div *ngIf="f.card_cvc.errors.pattern">
+            Number Only.
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- card name -->
+    <div class="row">
+      <div class="col-25">
+        <label for="name">Card Name</label>
+      </div>
+      <div class="col-75">
+        <input placeholder="Card Name" formControlName="card_name" id="name" type="text" class="form-control">
+
+        <div class="Error_handling" *ngIf="f.card_name.dirty && f.card_name.invalid">
+          <div *ngIf="f.card_name.errors?.minlength">
+            Card Name must be minimum 3 characters.
+          </div>
+          <div *ngIf="f.card_name.errors && f.card_name.errors.required">
+            Card Name is required.
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="row">
+      <button class="btn btn-primary" [disabled]="form.invalid" type="submit">Submit</button>
+    </div>
+  </form>
+</div>
+
+
+
+<mat-card class="example-card">
+  <mat-card-header>
+    <!-- Total Price -->
+    <h2>Total Price: ${{this.total}}</h2>
+  </mat-card-header>
+</mat-card>
